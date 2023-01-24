@@ -12,7 +12,6 @@ const getInventory = async ({ limits = 10, order_by = "id_ASC", page = 1 }) => {
     offset
   );
   const { rows: inventario } = await query(formattedQuery);
-  console.log(inventario);
   return inventario;
 };
 
